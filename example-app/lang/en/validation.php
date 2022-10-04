@@ -49,6 +49,7 @@ return [
     'ends_with' => 'The :attribute must end with one of the following: :values.',
     'enum' => 'The selected :attribute is invalid.',
     'exists' => 'The selected :attribute is invalid.',
+    'exists' => 'The selected :attribute is invalid.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
     'gt' => [
@@ -169,6 +170,14 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'EMAIL',
+        'phone' => 'Phone number',
+        'name' => 'Name',
+        'data' => 'Date',
+        'text' => 'Discription',
+        'password' => 'Password',
+        'password_confirmation' => 'Confirmation',
+    ],
 
 ];
