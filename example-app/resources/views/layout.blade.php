@@ -17,19 +17,10 @@
         </button>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('about')}}">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('contacts')}}">Contacts</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route('movie.create')}}">Add movie</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route('movie.list')}}">Movies</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('signup.create.form')}}">SignUp</a>
             </li>
         </ul>
     </div>
