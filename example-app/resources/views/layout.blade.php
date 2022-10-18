@@ -15,11 +15,49 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('signup.create.form')}}">SignUp</a>
+                <a class="nav-link active" aria-current="page" href="{{route('about')}}">About us</a>
             </li>
+            @if(!auth()->check())
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('signup.create.form')}}">SignUp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('signin.form')}}">SignIn</a>
+                </li>
+            @endif
+          @if(auth()->check())
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('contacts')}}">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('movie.create')}}">Add movie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('movie.list')}}">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('genre.create')}}">Add Genre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('genre.list')}}">Genres</a>
+                </li>
+                 <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="{{route('actor.create')}}">Add Actor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="{{route('actor.list')}}">Actors</a>
+                                </li>
+            @endif
+
         </ul>
+        @if (auth()->check())
+            <form action="{{ route('logout') }}" method="post" class="form-inline">
+                @csrf
+                <button class="btn btn-danger">Logout</button>
+            </form>
+        @endif
     </div>
     </nav>
 <div class="container">
