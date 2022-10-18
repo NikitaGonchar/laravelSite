@@ -13,7 +13,9 @@ class ContactController extends Controller
     {
         return view('contacts');
     }
-    public function form(CreateContactRequest $request){
+
+    public function form(CreateContactRequest $request)
+    {
         $cont = new NewReport(
             $request->get('email'),
             $request->get('name'),

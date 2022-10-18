@@ -24,10 +24,10 @@ class CreateContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'=>['required', 'email:rfc'],
-            'name'=>['required', 'min:1', 'max:100'],
-           // 'phone'=>['required', 'digits:10'],
-            'phone'=>['required', 'max:20'],
+            'email' => ['required', 'email:rfc'],
+            'name' => ['required', 'min:1', 'max:100'],
+            // 'phone'=>['required', 'digits:10'],
+            'phone' => ['required', 'max:20'],
         ];
     }
 }
