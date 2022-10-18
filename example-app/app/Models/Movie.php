@@ -8,11 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'name',
         'data',
         'text'
-        ];
+    ];
     protected $dates = [
         'created_at',
         'edit_at'

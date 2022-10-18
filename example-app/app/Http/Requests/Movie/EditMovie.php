@@ -24,9 +24,9 @@ class EditMovie extends FormRequest
     public function rules()
     {
         return [
-            'name'=>['required', 'min:1', 'max:255'],
-            'data'=>['required', 'numeric'],
-            'text'=>['required', 'min:10']
+            'name' => ['required', 'min:1', 'max:255'],
+            'data' => ['required', 'numeric'],
+            'text' => ['required', 'min:10']
         ];
     }
 }
