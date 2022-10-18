@@ -19,7 +19,7 @@ class EmailConfirm extends Mailable
      *
      * @return void
      */
-    public function __construct(private User $user )
+    public function __construct(private User $user)
     {
         //
     }

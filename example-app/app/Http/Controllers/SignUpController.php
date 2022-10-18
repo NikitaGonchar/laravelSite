@@ -13,10 +13,13 @@ use Illuminate\Support\Facades\Mail;
 
 class SignUpController extends Controller
 {
-    public function signForm(){
+    public function signForm()
+    {
         return view('sign-up');
     }
-    public function sign(SignUpRequest $request){
+
+    public function sign(SignUpRequest $request)
+    {
         $data = $request->validated();
         $user = new User($data);
         $user->save();
@@ -24,6 +27,7 @@ class SignUpController extends Controller
         session()->flash('success', 'User added');
         return redirect()->back();
     }
+
     public function verifyEmail(string $id, string $hash, Request $request)
     {
         if (!$request->hasValidSignature()) {
