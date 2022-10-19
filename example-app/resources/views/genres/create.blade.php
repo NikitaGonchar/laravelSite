@@ -8,7 +8,8 @@
             @csrf
             <div class="form-group">
                 <label for="title">{{ __('validation.attributes.name') }}</label>
-                <input value="{{ old('name') }}" name="name" type="text" class="form-control @error('name') is-invalid @enderror">
+                <input value="{{ old('name') }}" name="name" type="text"
+                       class="form-control @error('name') is-invalid @enderror">
                 @error('name')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror

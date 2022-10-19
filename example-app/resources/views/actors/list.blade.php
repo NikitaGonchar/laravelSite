@@ -37,6 +37,6 @@
         @endforeach
         </tbody>
     </table>
-{{--    <div class="d-flex justify-content-center"></div>--}}
-{{--    {!! $movies->links() !!}--}}
+    {{--    <div class="d-flex justify-content-center"></div>--}}
+    {{--    {!! $movies->links() !!}--}}
 @endsection

@@ -1,4 +1,3 @@
-
 Email: {{ $email }}
 <br>
 Name: {{ $name }}
