@@ -174,7 +174,7 @@ return [
         'email' => 'EMAIL',
         'phone' => 'Phone number',
         'name' => 'Name',
-        'data' => 'Date',
+        'date' => 'Date',
         'text' => 'Discription',
         'password' => 'Password',
         'password_confirmation' => 'Confirmation',
