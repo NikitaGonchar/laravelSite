@@ -15,9 +15,9 @@
             </div>
 
             <div class="form-group">
-                <label for="data">{{ __('validation.attributes.data') }}</label>
-                <input value="{{ old('data') }}" name="data" type="number" class="form-control @error('data') is-invalid @enderror">
-                @error('data')
+                <label for="date">{{ __('validation.attributes.date') }}</label>
+                <input value="{{ old('date') }}" name="date" type="number" class="form-control @error('date') is-invalid @enderror">
+                @error('date')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>

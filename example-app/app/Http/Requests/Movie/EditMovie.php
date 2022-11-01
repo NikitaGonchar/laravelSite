@@ -25,7 +25,7 @@ class EditMovie extends FormRequest
     {
         return [
             'name' => ['required', 'min:1', 'max:255'],
-            'data' => ['required', 'numeric'],
+            'date' => ['required', 'numeric'],
             'text' => ['required', 'min:10']
         ];
     }
