@@ -30,10 +30,10 @@ class MainController extends Controller
                 $q->where('name', 'like', $search);
             });
         }
-        if ($request->has('data')) {
-            $search = '%' . $request->get('data') . '%';
+        if ($request->has('date')) {
+            $search = '%' . $request->get('date') . '%';
             $query->where(function ($q) use ($search) {
-                $q->where('data', 'like', $search);
+                $q->where('date', 'like', $search);
             });
         }
         $movies = $query
