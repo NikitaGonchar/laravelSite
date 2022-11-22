@@ -18,6 +18,7 @@
         <ul class="navbar-nav">
             <li class="nav-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <a class="nav-link active" aria-current="page" href="{{route('about')}}">About us</a>
             </li>
             <li class="nav-item">
@@ -28,6 +29,8 @@
     </div>
 </nav>
 =======
+=======
+>>>>>>> hw19
                 <a class="nav-link active" aria-current="page" href="{{route('movie.create')}}">Add movie</a>
             </li>
             <li class="nav-item">
@@ -36,13 +39,20 @@
         </ul>
     </div>
     </nav>
+<<<<<<< HEAD
+>>>>>>> hw19
+=======
 >>>>>>> hw19
 <div class="container">
     @include('flash-messages')
     @yield('content')
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+=======
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+>>>>>>> hw19
 =======
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 >>>>>>> hw19

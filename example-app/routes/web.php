@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\MainController::class, 'index'])
     ->name('main');
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/about', [\App\Http\Controllers\AboutController::class, 'show'])
     ->name('about');
 Route::get('/contacts', [\App\Http\Controllers\ContactController::class, 'show'])
@@ -23,6 +24,8 @@ Route::get('/contacts', [\App\Http\Controllers\ContactController::class, 'show']
 Route::post('/contacts', [\App\Http\Controllers\ContactController::class, 'form'])
     ->name('contact.report');
 =======
+=======
+>>>>>>> hw19
 Route::get('/movies/create', [\App\Http\Controllers\MovieController::class, 'createForm'])
     ->name('movie.create');
 Route::post('/movies/create', [\App\Http\Controllers\MovieController::class, 'create'])
@@ -37,4 +40,7 @@ Route::get('/movies/{movie}/edit', [\App\Http\Controllers\MovieController::class
     ->name('movie.edit.form');
 Route::post('/movies/{movie}/edit', [\App\Http\Controllers\MovieController::class, 'edit'])
     ->name('movie.edit');
+<<<<<<< HEAD
+>>>>>>> hw19
+=======
 >>>>>>> hw19

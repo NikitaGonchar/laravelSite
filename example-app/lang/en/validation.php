@@ -175,7 +175,11 @@ return [
         'phone' => 'Phone number',
         'name' => 'Name',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'data' => 'Date',
+=======
+        'date' => 'Date',
+>>>>>>> hw19
 =======
         'date' => 'Date',
 >>>>>>> hw19
