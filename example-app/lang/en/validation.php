@@ -174,7 +174,11 @@ return [
         'email' => 'EMAIL',
         'phone' => 'Phone number',
         'name' => 'Name',
+<<<<<<< HEAD
         'data' => 'Date',
+=======
+        'date' => 'Date',
+>>>>>>> hw19
         'text' => 'Discription',
         'password' => 'Password',
         'password_confirmation' => 'Confirmation',
