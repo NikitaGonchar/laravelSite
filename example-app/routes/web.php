@@ -17,6 +17,7 @@ Route::get('/', [\App\Http\Controllers\MainController::class, 'index'])
     ->name('main');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/about', [\App\Http\Controllers\AboutController::class, 'show'])
     ->name('about');
 Route::get('/contacts', [\App\Http\Controllers\ContactController::class, 'show'])
@@ -44,3 +45,11 @@ Route::post('/movies/{movie}/edit', [\App\Http\Controllers\MovieController::clas
 >>>>>>> hw19
 =======
 >>>>>>> hw19
+=======
+Route::get('/sign-up', [\App\Http\Controllers\SignUpController::class, 'signForm'])
+    ->name('signup.create.form');
+Route::post('/sign-up/create', [\App\Http\Controllers\SignUpController::class, 'sign'])
+    ->name('signup.create');
+Route::get('/verify-email/{id}/{hash}', [\App\Http\Controllers\SignUpController::class, 'verifyEmail'])
+    ->name('verify.email');
+>>>>>>> hw20

@@ -176,6 +176,7 @@ return [
         'name' => 'Name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'data' => 'Date',
 =======
         'date' => 'Date',
@@ -183,6 +184,9 @@ return [
 =======
         'date' => 'Date',
 >>>>>>> hw19
+=======
+        'date' => 'Date',
+>>>>>>> hw20
         'text' => 'Discription',
         'password' => 'Password',
         'password_confirmation' => 'Confirmation',

@@ -19,6 +19,7 @@
             <li class="nav-item">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <a class="nav-link active" aria-current="page" href="{{route('about')}}">About us</a>
             </li>
             <li class="nav-item">
@@ -35,18 +36,25 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route('movie.list')}}">Movies</a>
+=======
+                <a class="nav-link active" aria-current="page" href="{{route('signup.create.form')}}">SignUp</a>
+>>>>>>> hw20
             </li>
         </ul>
     </div>
     </nav>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> hw19
 =======
 >>>>>>> hw19
+=======
+>>>>>>> hw20
 <div class="container">
     @include('flash-messages')
     @yield('content')
 </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -56,5 +64,8 @@
 =======
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 >>>>>>> hw19
+=======
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+>>>>>>> hw20
 </body>
 </html>
