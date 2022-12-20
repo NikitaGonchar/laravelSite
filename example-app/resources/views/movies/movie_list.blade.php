@@ -15,7 +15,11 @@
         <tbody>
         @foreach($movies as $movie)
             <tr>
+<<<<<<< HEAD
                 <th scope="row">{{ $movie->user->id }}</th>
+=======
+                <th scope="row">{{ $movie->id }}</th>
+>>>>>>> master
                 <td>{{ $movie->name }}</td>
                 <td>{{ $movie->created_at?->format('Y/m/d') }}</td>
                 <td>
@@ -34,6 +38,11 @@
         @endforeach
         </tbody>
     </table>
+<<<<<<< HEAD
     {{--    <div class="d-flex justify-content-center"></div>--}}
     {{--    {!! $movies->links() !!}--}}
+=======
+{{--    <div class="d-flex justify-content-center"></div>--}}
+{{--    {!! $movies->links() !!}--}}
+>>>>>>> master
 @endsection

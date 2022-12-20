@@ -26,11 +26,15 @@ class CreateMovie extends FormRequest
         return [
             'name' => ['required', 'min:1', 'max:255'],
             'date' => ['required', 'numeric'],
+<<<<<<< HEAD
             'text' => ['required', 'min:10'],
             'genres' => ['required', 'array', 'min:1'],
             'genres.*' => ['required', 'exists:genres,id'],
             'actors' => ['required', 'array', 'min:1'],
             'actors.*' => ['required', 'exists:actors,id'],
+=======
+            'text' => ['required', 'min:10']
+>>>>>>> master
         ];
     }
 }

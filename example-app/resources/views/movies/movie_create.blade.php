@@ -8,16 +8,24 @@
             @csrf
             <div class="form-group">
                 <label for="title">{{ __('validation.attributes.name') }}</label>
+<<<<<<< HEAD
                 <input value="{{ old('name') }}" name="name" type="text"
                        class="form-control @error('name') is-invalid @enderror">
+=======
+                <input value="{{ old('name') }}" name="name" type="text" class="form-control @error('name') is-invalid @enderror">
+>>>>>>> master
                 @error('name')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="date">{{ __('validation.attributes.date') }}</label>
+<<<<<<< HEAD
                 <input value="{{ old('date') }}" name="date" type="number"
                        class="form-control @error('date') is-invalid @enderror">
+=======
+                <input value="{{ old('date') }}" name="date" type="number" class="form-control @error('date') is-invalid @enderror">
+>>>>>>> master
                 @error('date')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
@@ -32,6 +40,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
+<<<<<<< HEAD
             <div class="form-group">
                 <label for="">Genres</label>
                 @error('genres')
@@ -56,6 +65,8 @@
                     </div>
             </div>
             @endforeach
+=======
+>>>>>>> master
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

@@ -16,6 +16,7 @@ class Movie extends Model
     ];
     protected $dates = [
         'created_at',
+<<<<<<< HEAD
         'updated_at'
     ];
 
@@ -33,4 +34,8 @@ class Movie extends Model
     {
         return $this->belongsToMany(Actor::class, 'movie_actors');
     }
+=======
+        'edit_at'
+    ];
+>>>>>>> master
 }
