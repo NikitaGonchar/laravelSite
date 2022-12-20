@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Movie List')
+@section('title', 'Genre List')
 
 @section('content')
     <table class="table">
@@ -13,17 +13,17 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($movies as $movie)
+        @foreach($genres as $genre)
             <tr>
-
-                <td>{{ $movie->name }}</td>
-                <td>{{ $movie->created_at?->format('Y/m/d') }}</td>
+                <th scope="row">{{ $genre->id }}</th>
+                <td>{{ $genre->name }}</td>
+                <td>{{ $genre->created_at?->format('Y/m/d') }}</td>
                 <td>
-                    <a href="{{route('movie.show', ['movie' => $movie->id])}}">Show</a>
+                    <a href="{{route('genre.show', ['genre' => $genre->id])}}">Show</a>
                     <br>
-                    <a href="{{route('movie.edit.form', ['movie' => $movie->id])}}">Edit</a>
+                    <a href="{{route('genre.edit.form', ['genre' => $genre->id])}}">Edit</a>
                     <br>
-                    <form action="{{route('movie.delete', ['movie' => $movie->id])}}" method="post">
+                    <form action="{{route('genre.delete', ['genre' => $genre->id])}}" method="post">
                         @csrf
                         <button type="submit" class="btn btn-outline-danger">
                             Delete
@@ -34,5 +34,7 @@
         @endforeach
         </tbody>
     </table>
-
+    {{--    <div class="d-flex justify-content-center"></div>--}}
+    {{--    {!! $movies->links() !!}--}}
 @endsection
+

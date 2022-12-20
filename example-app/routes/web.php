@@ -12,21 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [\App\Http\Controllers\MainController::class, 'index'])
     ->name('main');
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 Route::get('/about', [\App\Http\Controllers\AboutController::class, 'show'])
     ->name('about');
 Route::get('/contacts', [\App\Http\Controllers\ContactController::class, 'show'])
     ->name('contacts');
 Route::post('/contacts', [\App\Http\Controllers\ContactController::class, 'form'])
     ->name('contact.report');
-=======
-=======
->>>>>>> hw19
+
+
 Route::get('/movies/create', [\App\Http\Controllers\MovieController::class, 'createForm'])
     ->name('movie.create');
 Route::post('/movies/create', [\App\Http\Controllers\MovieController::class, 'create'])
@@ -41,15 +37,13 @@ Route::get('/movies/{movie}/edit', [\App\Http\Controllers\MovieController::class
     ->name('movie.edit.form');
 Route::post('/movies/{movie}/edit', [\App\Http\Controllers\MovieController::class, 'edit'])
     ->name('movie.edit');
-<<<<<<< HEAD
->>>>>>> hw19
-=======
->>>>>>> hw19
-=======
+
+
 Route::get('/sign-up', [\App\Http\Controllers\SignUpController::class, 'signForm'])
     ->name('signup.create.form');
 Route::post('/sign-up/create', [\App\Http\Controllers\SignUpController::class, 'sign'])
     ->name('signup.create');
 Route::get('/verify-email/{id}/{hash}', [\App\Http\Controllers\SignUpController::class, 'verifyEmail'])
     ->name('verify.email');
->>>>>>> hw20
+
+

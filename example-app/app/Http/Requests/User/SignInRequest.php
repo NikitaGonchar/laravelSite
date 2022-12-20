@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Movie;
+namespace App\Http\Requests\User;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateMovie extends FormRequest
+class SignInRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,8 @@ class CreateMovie extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'min:1', 'max:255'],
-            'date' => ['required', 'numeric'],
-
+            'email' => ['required', 'email:rfc', 'max:255'],
+            'password' => ['required', 'string', 'min:6', 'max:30'],
         ];
     }
 }

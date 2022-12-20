@@ -5,16 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
+class Actor extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'name',
-        'date',
-        'text'
+        'surname',
+        'patronymic',
+        'data',
+        'height',
     ];
     protected $dates = [
         'created_at',
-
+        'updated_at'
+    ];
 }

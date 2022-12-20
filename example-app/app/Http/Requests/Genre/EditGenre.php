@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Movie;
+namespace App\Http\Requests\Genre;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateMovie extends FormRequest
+class EditGenre extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,7 @@ class CreateMovie extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'min:1', 'max:255'],
-            'date' => ['required', 'numeric'],
-
+            'name' => ['required', 'min:1', 'max:255']
         ];
     }
 }

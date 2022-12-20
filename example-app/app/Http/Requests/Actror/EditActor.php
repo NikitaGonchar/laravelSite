@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Movie;
+namespace Actror;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateMovie extends FormRequest
+class EditActor extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,8 +25,10 @@ class CreateMovie extends FormRequest
     {
         return [
             'name' => ['required', 'min:1', 'max:255'],
-            'date' => ['required', 'numeric'],
-
+            'surname' => ['required', 'min:1', 'max:255'],
+            'patronymic' => ['required', 'min:1', 'max:255'],
+            'data' => ['required', 'numeric'],
+            'height' => ['required', 'numeric'],
         ];
     }
 }
