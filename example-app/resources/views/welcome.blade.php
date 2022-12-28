@@ -3,6 +3,7 @@
 @section('title', 'Main')
 
 @section('content')
+<<<<<<< HEAD
     <div class="row mt-4">
         <div class="col-md-8">
             @if($movies->isEmpty())
@@ -71,4 +72,7 @@
             </ul>
         </div>
     </div>
+=======
+    <h1>Hello world</h1>
+>>>>>>> master
 @endsection
