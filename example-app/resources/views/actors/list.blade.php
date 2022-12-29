@@ -24,36 +24,26 @@
                 <td>
                     <a href="{{route('actor.show', ['actor' => $actor->id])}}">Show</a>
                     <br>
-<<<<<<< HEAD
                     @can('edit', $actor)
-                    <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
+                        <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
                     @endcan
                     <br>
                     @can('delete', $actor)
-=======
-                    <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
-                    <br>
->>>>>>> master
-                    <form action="{{route('actor.delete', ['actor' => $actor->id])}}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-outline-danger">
-                            Delete
-                        </button>
-                    </form>
-<<<<<<< HEAD
+                        <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
+                        <br>
+                        <form action="{{route('actor.delete', ['actor' => $actor->id])}}" method="post">
+                            @csrf
+                            <button type="submit" class="btn btn-outline-danger">
+                                Delete
+                            </button>
+                        </form>
                     @endcan
-=======
->>>>>>> master
                 </td>
             </tr>
         @endforeach
         </tbody>
     </table>
-<<<<<<< HEAD
-{{--    <div class="d-flex justify-content-center"></div>--}}
-{{--    {!! $movies->links() !!}--}}
-=======
-    {{--    <div class="d-flex justify-content-center"></div>--}}
-    {{--    {!! $movies->links() !!}--}}
->>>>>>> master
+    <div class="d-flex justify-content-center"></div>
+    {!! $movies->links() !!}
+
 @endsection

@@ -2,17 +2,16 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
+
 use App\Models\Actor;
 use App\Models\Genre;
 use App\Models\Movie;
-=======
->>>>>>> master
+
 use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-<<<<<<< HEAD
+
     public function index(Request $request)
     {
         $query = Movie::query()
@@ -45,12 +44,8 @@ class MainController extends Controller
             ->appends($request->query());
         $genres = Genre::all();
         $actors = Actor::all();
+
         return view('welcome', compact('movies', 'genres', 'actors'));
-=======
-    public function index()
-    {
-        return view('welcome');
->>>>>>> master
     }
 
 }

@@ -19,13 +19,19 @@ class GenrePolicy
     {
         //
     }
-    public function create(User $user){
+
+    public function create(User $user)
+    {
         return $user->role === 'admin';
     }
-    public function edit(User $user){
+
+    public function edit(User $user)
+    {
         return $user->role === 'admin';
     }
-    public function delete(User $user){
+
+    public function delete(User $user)
+    {
         return $user->role === 'admin';
     }
 }

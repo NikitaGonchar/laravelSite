@@ -19,15 +19,19 @@ class MoviePolicy
     {
         //
     }
+
     public function create(User $user): bool
     {
         return $user->role === 'admin';
     }
+
     public function edit(User $user, Movie $movie)
     {
         return $user->id === $movie->user_id;
     }
-    public function delete(User $user, Movie $movie){
+
+    public function delete(User $user, Movie $movie)
+    {
         return $user->id === $movie->user_id;
     }
 }

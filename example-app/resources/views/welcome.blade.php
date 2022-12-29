@@ -3,7 +3,6 @@
 @section('title', 'Main')
 
 @section('content')
-<<<<<<< HEAD
     <div class="row mt-4">
         <div class="col-md-8">
             @if($movies->isEmpty())
@@ -23,7 +22,6 @@
                     @foreach($movie->actors as $actor)
                         <span>{{ $actor->name }}</span>
                         @endforeach
-                        </p>
                 </article>
             @endforeach
             <div class="d-flex justify-content-center">
@@ -72,7 +70,5 @@
             </ul>
         </div>
     </div>
-=======
     <h1>Hello world</h1>
->>>>>>> master
 @endsection

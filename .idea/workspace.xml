@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bede338c-897b-4e99-b2e5-03f8c171ce58" name="Changes" comment="" />
+    <list default="true" id="bede338c-897b-4e99-b2e5-03f8c171ce58" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/MovieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Policies/ActorPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Policies/ActorPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Policies/GenrePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Policies/GenrePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Policies/MoviePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Policies/MoviePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/actors/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/actors/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/flash-messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/flash-messages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/genres/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/genres/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/example-app/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -26,14 +40,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress-sample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myapps" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/example-app/composer.json" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,10 +52,35 @@
       <option name="presentableId" value="Default" />
       <updated>1671535676317</updated>
       <workItem from="1671535677607" duration="745000" />
+      <workItem from="1672349589924" duration="25000" />
+      <workItem from="1672349617162" duration="3252000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
