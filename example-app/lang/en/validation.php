@@ -174,26 +174,13 @@ return [
         'email' => 'EMAIL',
         'phone' => 'Phone number',
         'name' => 'Name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         'data' => 'Date',
-=======
-        'date' => 'Date',
->>>>>>> hw19
-=======
-        'date' => 'Date',
->>>>>>> hw19
-=======
-        'date' => 'Date',
->>>>>>> hw20
-=======
-        'date' => 'Date',
->>>>>>> newhw21
         'text' => 'Discription',
         'password' => 'Password',
         'password_confirmation' => 'Confirmation',
+        'surname' => 'Surname',
+        'patronymic' => 'Patronymic',
+        'height' => 'Height',
     ],
 
 ];

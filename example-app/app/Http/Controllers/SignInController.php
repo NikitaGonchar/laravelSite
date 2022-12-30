@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\User\SignInRequest;
+use App\Listeners\UserLoggedIn;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-use function Termwind\render;
 
 class SignInController extends Controller
 {
@@ -23,6 +23,9 @@ class SignInController extends Controller
 //            return $user->email_verified_at !== null;
 //        };
         if (Auth::attempt($credentials)) {
+            $user = auth()->user();
+            $event = new \App\Events\UserLoggedIn($user, $request);
+            event($event);
             session()->flash('success', 'Signed In');
             return redirect(route('main'));
         }
