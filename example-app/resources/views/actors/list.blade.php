@@ -24,19 +24,26 @@
                 <td>
                     <a href="{{route('actor.show', ['actor' => $actor->id])}}">Show</a>
                     <br>
-                    <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
+                    @can('edit', $actor)
+                        <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
+                    @endcan
                     <br>
-                    <form action="{{route('actor.delete', ['actor' => $actor->id])}}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-outline-danger">
-                            Delete
-                        </button>
-                    </form>
+                    @can('delete', $actor)
+                        <a href="{{route('actor.edit.form', ['actor' => $actor->id])}}">Edit</a>
+                        <br>
+                        <form action="{{route('actor.delete', ['actor' => $actor->id])}}" method="post">
+                            @csrf
+                            <button type="submit" class="btn btn-outline-danger">
+                                Delete
+                            </button>
+                        </form>
+                    @endcan
                 </td>
             </tr>
         @endforeach
         </tbody>
     </table>
-    {{--    <div class="d-flex justify-content-center"></div>--}}
-    {{--    {!! $movies->links() !!}--}}
+    <div class="d-flex justify-content-center"></div>
+    {!! $movies->links() !!}
+
 @endsection
