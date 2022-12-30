@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Observers\MovieObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,12 +17,14 @@ class Movie extends Model
     ];
     protected $dates = [
         'created_at',
-<<<<<<< HEAD
-        'edit_at'
-    ];
-=======
         'updated_at'
     ];
+
+    public static function boot()
+    {
+        parent::boot();
+        self::observe(MovieObserver::class);
+    }
 
     public function user()
     {
@@ -37,5 +40,4 @@ class Movie extends Model
     {
         return $this->belongsToMany(Actor::class, 'movie_actors');
     }
->>>>>>> newhw21
 }

@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Events\UserRegistered;
 use App\Models\User;
 use DateTime;
 use Illuminate\Bus\Queueable;
@@ -19,7 +20,7 @@ class EmailConfirm extends Mailable
      *
      * @return void
      */
-    public function __construct(private User $user)
+    public function __construct(public User $user)
     {
         //
     }

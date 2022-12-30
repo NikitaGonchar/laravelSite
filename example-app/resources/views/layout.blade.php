@@ -19,32 +19,10 @@
         </button>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <a class="nav-link active" aria-current="page" href="{{route('about')}}">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('contacts')}}">Contacts</a>
-            </li>
-
-        </ul>
-    </div>
-</nav>
-=======
-=======
->>>>>>> hw19
-                <a class="nav-link active" aria-current="page" href="{{route('movie.create')}}">Add movie</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{route('movie.list')}}">Movies</a>
-=======
-                <a class="nav-link active" aria-current="page" href="{{route('signup.create.form')}}">SignUp</a>
->>>>>>> hw20
-=======
-                <a class="nav-link active" aria-current="page" href="{{route('about')}}">About us</a>
->>>>>>> newhw21
+                <a class="nav-link active" aria-current="page" href="{{route('loginhistory')}}">Login History</a>
             </li>
             @if(!auth()->check())
                 <li class="nav-item">
@@ -58,21 +36,27 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('contacts')}}">Contacts</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('movie.create')}}">Add movie</a>
-                </li>
+                @can('create', \App\Models\Movie::class)
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('movie.create')}}">Add movie</a>
+                    </li>
+                @endcan
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('movie.list')}}">Movies</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('genre.create')}}">Add Genre</a>
-                </li>
+                @can('create', \App\Models\Genre::class)
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('genre.create')}}">Add Genre</a>
+                    </li>
+                @endcan
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('genre.list')}}">Genres</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('actor.create')}}">Add Actor</a>
-                </li>
+                @can('create', \App\Models\Actor::class)
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('actor.create')}}">Add Actor</a>
+                    </li>
+                @endcan
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('actor.list')}}">Actors</a>
                 </li>
@@ -86,40 +70,13 @@
             </form>
         @endif
     </div>
-<<<<<<< HEAD
-    </nav>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> hw19
-=======
->>>>>>> hw19
-=======
->>>>>>> hw20
-=======
 </nav>
->>>>>>> newhw21
 <div class="container">
     @include('flash-messages')
     @yield('content')
 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-=======
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
->>>>>>> hw19
-=======
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
->>>>>>> hw19
-=======
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
->>>>>>> hw20
-=======
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
->>>>>>> newhw21
 </body>
 </html>
