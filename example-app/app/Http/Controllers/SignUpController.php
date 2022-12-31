@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\UserRegistered;
 use App\Http\Requests\User\SignUpRequest;
 use App\Mail\EmailConfirm;
 use App\Models\User;
+use App\Services\UserService;
 use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -13,21 +15,17 @@ use Illuminate\Support\Facades\Mail;
 
 class SignUpController extends Controller
 {
-    public function signForm()
+    public function __construct(private UserService $userService)
     {
+    }
+    public function signForm(){
         return view('sign-up');
     }
-
-    public function sign(SignUpRequest $request)
-    {
-        $data = $request->validated();
-        $user = new User($data);
-        $user->save();
-        Mail::to($user->email)->send(new EmailConfirm($user));
+    public function sign(SignUpRequest $request){
+        $this->userService->signUp($request->validated());
         session()->flash('success', 'User added');
         return redirect()->back();
     }
-
     public function verifyEmail(string $id, string $hash, Request $request)
     {
         if (!$request->hasValidSignature()) {
